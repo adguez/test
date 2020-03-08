@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Registro</title>
+	<link rel="stylesheet" href="css/formularioRegistro.css">
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" class="formulario" id="formulario" name="formulario">
+
+			<div class="contenedor-inputs">
+				<input type="text" name="nombre" placeholder="Nombre:">
+				<input type="email" name="correo" placeholder="Correo:">
+				
+				<div class="sexo">
+					<input type="radio" name="sexo" id="hombre" value="hombre">
+					<label for="hombre" class="label-radio hombre">Hombre</label>
+					<input type="radio" name="sexo" id="mujer" value="mujer">
+					<label for="mujer" class="label-radio mujer">Mujer</label>
+				</div>
+
+				<div class="terminos">
+					<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos">Acepto terminos y condiciones</label>
+				</div>
+				<ul class="error" id="error">
+				</ul>
+
+			</div>
+
+			<input type="sumbmit" class="btn" value="Registrarse">
+		</form>
+	</div>
+
+	<script src="js/formularioRegistro.js"></script>
+</body>
+</html>
